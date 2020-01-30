@@ -1,0 +1,56 @@
+<html> 
+<head> 
+<title>t1</title> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head> 
+<body>
+	<input type="text" name="num1" id="num1"><br><br>
+	<input type="text" name="num2" id="num2"><br><br>
+
+<button onclick="myfun()"> Addition</button>
+<p id="test">Text will be change</p>
+<p id="demo">Text will be change</p>
+<script type="text/javascript">
+
+	function myfun()
+	{	
+		var num1 = document.getElementById("num1").value;
+		var num2 = document.getElementById("num2").value;
+		if(num1=='' && num2=='')
+		{
+			document.write("error");
+		}else{
+			var result = num1 / num2;
+		document.getElementById("test").innerHTML = result;
+		}	
+	}
+</script>
+<script>
+function newarray(){
+var fruits, text, flen, i;
+ fruits = ["banana","sdqf","sdfe","rwer","sdfa"];
+ flen = fruits.length;
+ text = "<ul>";
+ for(i = 0; i<flen; i++){
+ 	text +="<li>" + fruits[i] + "</li>";
+ }
+ text += "</ul>";
+ document.getElementById("demo").innerHTML = text;
+}
+newarray();
+</script>
+
+ </body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
